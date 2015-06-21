@@ -1,0 +1,55 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Advanced jQuery Optional 1 </title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <style>
+    .errorMsg{
+      color: red;
+      font-size: 14px;
+    }
+    label{
+      font-size: 14px;
+    }
+    #wrapper {
+      width:500px;
+      margin: 0 auto;
+    }
+  </style>
+  <script>
+  $(function() {
+    $("#datepicker").datepicker();
+    $("#datepicker2").datepicker();
+  });
+
+  $(document).ready(function(){
+    $('form').submit(function(){
+      if ($('input#namefield').val() == ''){
+        $('.errorMsg').text("Please enter the name").show().fadeOut( 5000 );
+        return false;
+      }
+      else {
+        alert("Thanks Tom! Your departure date is " +$('#datepicker').val() + " and " + "Arrival is " +$('#datepicker2').val());
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <h2>Welcome to the Cruise of your lifetime!</2>
+    <form id="form1" action="javascript:alert( 'success!' );">
+    <input type="text" id="datepicker" value="From"><br/>
+    <input type="text" id="datepicker2" value="To"><br/>
+    <label>Name
+    <input type="text" id="namefield" name="name" value=""></label><br/>
+    <span class="errorMsg"></span><br/>
+      
+    <input type="submit" value"Book your Ticket!">
+   </form>
+  </div> 
+</body>
+</html>

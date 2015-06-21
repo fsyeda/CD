@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name ="description" content="Advanced Jquery Asgmt -1">
+  <title> Advanced Jquery Asgmt -1</title>
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script>
+  $(document).ready(function(){
+    $('.button1').click(function() {
+      $('#form1 input:text').keyup(function(){
+        var newval= $(this).val();
+        $('#table1 > tbody:last-child >tr').append("<td>"+newval+"</td>");
+      })
+      .keyup();
+      /*function displayVals () {
+        var enteredTxt = $('#form1 input:text').val();
+        $('#table1').append("<tr><td>"+ enteredTxt +"</td></tr>");
+      }
+      //$("#form1 input:text").change(displayVals);
+      displayVals();*/
+    });
+  });
+  </script>
+  <style type="text/css">
+  img {
+    cursor: pointer;
+  }
+  #table1 {
+    /*width:100%;*/
+  }
+  table,th.td {
+    border-collapse: collapse;
+  }
+  th,td{ 
+    padding:5px;
+  }
+  </style>
+</head>
+<body>
+  <table id="table1">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
+      <th>Phone</th>
+    </tr>
+
+    <tbody>
+      <tr></tr>
+    </tbody>
+  </table><br/> 
+
+  <form id="form1" action="#" method="#">
+    <label>
+      <input id="firstname" type="text" name="first_name" value="first">First Name
+    </label><br/> <br/>
+    <label>
+     <input type="text" name="last_name" value="Last Name">Last Name
+    </label><br/><br/>
+    <label>
+      <input type="text" name="email" value="Email">Email
+    </label><br/><br/>
+    <label>
+      <input type="text" name="phone" value="Phone">Phone
+    </label><br/><br/>
+  </form>
+  <button class="button1">Add User</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

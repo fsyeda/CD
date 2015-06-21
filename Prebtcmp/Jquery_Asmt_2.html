@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name ="description" content="Jquery Assignment - 2 ">
+  <title> Jquery Assignment - 2 - Ninja Hide()/Show()</title>
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script>
+  $(document).ready(function(){
+    $("img").click(function(){
+        $(this).hide();
+    });
+
+    $(".btn").click(function(){
+        $("img").show();
+    });
+  });
+  </script>
+  <style type="text/css">
+  img{
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <img id="img1" src="images/ninja2.png" width="200" height="200">
+    <img id="img2" src="images/ninja2.png" width="200" height="200">
+    <img id="img3" src="images/ninja2.png" width="200" height="200">
+    <img id="img4" src="images/ninja2.png" width="200" height="200">
+    <img id="img5" src="images/ninja2.png" width="200" height="200">
+  </div>
+  <div class="btn"><button>Restore</button></div>
+</body>
+</html>

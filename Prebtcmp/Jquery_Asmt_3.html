@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name ="description" content="Jquery Assignment - 3 ">
+  <title> Jquery Assignment - 3 - Two Images</title>
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script>
+  $(document).ready(function(){
+    $("img").click(function(){
+      var newImg = $(this).attr('newsrc'); //gets value of newsrc & stores in newImg
+        $(this).attr('src', newImg); //Replacing the src with newImg here
+    });
+  });
+  </script>
+  <style type="text/css">
+  img {
+    cursor: pointer;
+  }
+  ul {
+    list-style-type: none;
+  }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><img src="images/img/cat0.png" newsrc="images/img/ninja0.png"></li>
+    <li><img src="images/img/cat1.png" newsrc="images/img/ninja1.png"></li>
+    <li><img src="images/img/cat2.png" newsrc="images/img/ninja2.png"></li>
+    <li><img src="images/img/cat3.png" newsrc="images/img/ninja3.png"></li>
+    <li><img src="images/img/cat4.png" newsrc="images/img/ninja4.png"></li>
+  </div>
+</body>
+</html>

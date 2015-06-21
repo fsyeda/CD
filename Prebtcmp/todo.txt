@@ -1,0 +1,25 @@
+Todo later:
+
+Terminal and GIT
+Jquery Intro - Assignment 3,4,optional
+Algorithm videos-- stuck with bug in cdojo
+watch Emmet video in cdojo 
+CS50.tv
+
+
+Saturday:
+-------
+Timesheet for gigya 
+
+Sunday:
+------
+- shaami
+- citizenship
+- Website content fixes
+
+
+Check:
+======
+- check advanced jquery asgmt 1 output.. not print on next <tr>
+
+Nc27

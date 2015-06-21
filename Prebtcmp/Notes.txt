@@ -1,0 +1,8 @@
+
+JQUERY: watch last video in jquery intro
+
+.append() - This Inserts content inside the div .inner
+$( ".inner" ).append( "<p>Test</p>" );
+
+.addClass() - This inserts contents outside the div .inner
+$( ".inner" ).addClass("<p>Test</p>" );

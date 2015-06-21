@@ -1,0 +1,59 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Accordian </title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+
+  </style>
+  <script>
+  $(function() {
+    $("#myaccordian").accordion();
+  });
+
+  $(function() {
+    $("#mytabs").tabs();
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="myaccordian">
+  <h3>Section 1</h3>
+  <div>
+    <p>Section 1 content</p>
+  </div>
+
+  <h3>Section 2</h3>
+  <div>
+    <p>Section 2 content</p>
+  </div>
+
+  <h3>Section 3</h3>
+  <div>
+    <p>Section 3 content</p>
+  </div>
+
+  <h3>Section 4</h3>
+  <div class="section1">
+    <p>Section 4 content</p>
+  </div>
+</div>
+ 
+ <h4>Tabs section starts here!</h4>
+ <div id="mytabs">
+  <ul>
+    <li><a href="#tab1">Tab1</a></li>
+    <li><a href="#tab2">Tab2</a></li>
+    <li><a href="#tab3">Tab3</a></li>
+  </ul>
+  <div id="tab1"> Content for Tab1</div>
+  <div id="tab2"> Content for Tab2</div>
+  <div id="tab3"> Content for Tab3</div>
+ </div>
+</body>
+</html>

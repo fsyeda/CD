@@ -1,0 +1,19 @@
+Making a new folder
+mkdir new_directory_name
+
+Delete an empty directory(folder)
+rm directory_name
+
+Delete a non-empty directory(folder)
+rm -rf directory_name
+
+Creating a new file
+touch index.html
+touch style.css
+
+Removing a file
+rm index.html
+
+Renaming a file
+mv index.html new_name_index.html
+mv new_name_index.html ../new_name_index.html
